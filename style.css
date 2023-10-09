@@ -15,17 +15,19 @@ body * {
 }
 
 #container {
-  width: 360px;
-  border: 1px solid red;
-  margin: auto; 
+  width: 360px; 
+  margin: 56px auto 0px;
 }
 
 #profile {
   text-align: center;
+  padding :24px
 }
 
 #profile img {
   /* A div [e] um elemento block a img [e] inline */
+  
+
   width: 112px;
 }
 
