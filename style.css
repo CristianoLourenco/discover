@@ -15,18 +15,17 @@ body * {
 }
 
 #container {
-  width: 360px; 
+  width: 360px;
   margin: 56px auto 0px;
 }
 
 #profile {
   text-align: center;
-  padding :24px
+  padding: 24px;
 }
 
 #profile img {
   /* A div [e] um elemento block a img [e] inline */
-  
 
   width: 112px;
 }
@@ -34,4 +33,24 @@ body * {
 #profile p {
   font-weight: 500;
   line-height: 24px;
+}
+
+/* ! Links */
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+ 
+ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
+  background: rgba(255, 255, 255, 0.1);
+  border:1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
