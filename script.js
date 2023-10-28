@@ -8,9 +8,9 @@ function toggleMode() {
   const img = document.querySelector("#profile img")
   if (html.classList.contains("light")) {
     // ! if light mode, add light img
-    img.setAttribute("src", "./assets/avatar.png")
+    img.setAttribute("src", "./assets/avatar_light.svg")
   } else {
     // ! if dark mode, add dark img
-    img.setAttribute("src", "./assets/avatar-light.png")
+    img.setAttribute("src", "./assets/avatar.svg")
   }
 }
