@@ -7,11 +7,20 @@
 :root {
   --text-color: white;
   --bg-url: url(assets/bg-mobile.jpg);
+  --switch-bg-url: url(assets/moon-stars.svg);
   --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color-hover: rgba(255, 255, 255, 0.05);
+  --surface-color: rgba(0, 0, 0, 0.1);
+  --highligth-color: rgba(255, 255, 255, 0.2);
 }
 .light {
   --text-color: black;
   --bg-url: url(assets/bg-mobile-light.jpg);
+  --switch-bg-url: url(assets/sun.svg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color-hover: rgba(0, 0, 0, 0.2);
+  --surface-color: rgba(0, 0, 0, 0.1);
+  --highligth-color: rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -29,21 +38,55 @@ body * {
   margin: 56px auto 0px;
   padding: 0 24px;
 }
+/* ! Profile */
 
 #profile {
   text-align: center;
   padding: 24px;
+
+  padding-bottom: 10px;
 }
 
 #profile img {
   /* A div [e] um elemento block a img [e] inline */
-
+  /* top: ; */
   width: 112px;
 }
 
 #profile p {
   font-weight: 500;
   line-height: 24px;
+  padding: 2px 0 5px 0;
+}
+/* ! Switch */
+
+#switch {
+  position: relative;
+  width: 64px;
+  margin: 4px auto;
+}
+
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-bg-url) no-repeat center;
+  border: 0;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  right: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+#switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px;
 }
 
 /* ! Links */
@@ -61,8 +104,8 @@ ul li a {
   align-items: center;
   justify-content: center;
   padding: 16px 24px;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
   border-radius: 8px;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -70,7 +113,7 @@ ul li a {
   transition: background 0.2s;
 }
 ul li a:hover {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--surface-color-hover);
   border: 1.5px solid var(--text-color);
 }
 
@@ -91,7 +134,7 @@ ul li a:hover {
   transition: background 0.3s;
 }
 #social-links a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--highligth-color);
 }
 
 /* ! footer */
