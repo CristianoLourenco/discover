@@ -24,19 +24,11 @@
   --highligth-color: rgba(0, 0, 0, 0.1);
 }
 /* ! Change the backgound when its change to mobile */
-@media (min-width: 690px) {
-  :root {
-    --bg-url: url(assets/bg-desktop.jpg);
-  }
-  .light {
-    --bg-url: url(assets/bg-desktop-light.jpg);
-  }
-}
 
 body {
-  height: 100vh;
+  /* height: 100vh; */
   background: var(--bg-url) no-repeat top center/cover;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 body * {
@@ -45,10 +37,11 @@ body * {
 }
 
 #container {
-  max-width: 550px;
+  width: 100%;
+  max-width: 588px;
   margin: 56px auto 0px;
   padding: 0 24px;
-  min-width: 200px;
+ 
 }
 /* ! Profile */
 
@@ -161,4 +154,14 @@ footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+}
+
+/* ! mediaquery */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(assets/bg-desktop.jpg);
+  }
+  .light {
+    --bg-url: url(assets/bg-desktop-light.jpg);
+  }
 }
