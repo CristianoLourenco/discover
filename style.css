@@ -23,7 +23,7 @@
   --surface-color: rgba(0, 0, 0, 0.1);
   --highligth-color: rgba(0, 0, 0, 0.1);
 }
-
+/* ! Change the backgound when its change to mobile */
 @media screen and (min-width: 500px) {
   :root {
     --bg-url: url(assets/bg-desktop.jpg);
