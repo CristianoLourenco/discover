@@ -24,11 +24,14 @@
   --highligth-color: rgba(0, 0, 0, 0.1);
 }
 /* ! Change the backgound when its change to mobile */
- 
-body {
-  height: 100vh;
-  background: var(--bg-url) no-repeat top center/cover;
-  overflow: hidden;
+
+
+body { 
+  background: var(--bg-url);
+  background-position:top center ;
+  background-repeat: no-repeat; 
+  background-size: cover;
+  overflow: auto;
 }
 
 body * {
@@ -52,7 +55,7 @@ body * {
 
 #profile img {
   /* A div [e] um elemento block a img [e] inline */
-  /* top: ; */
+  /* top: ; */ 
   width: 112px;
 }
 
